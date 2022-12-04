@@ -40,7 +40,7 @@ h2 {
   text-transform: uppercase;
 }
 
-#calendar h2{
+#calendar h2 {
   padding-bottom: 2px;
   margin-top: -10px;
 }
@@ -77,7 +77,7 @@ a {
 /*---------------------------------------
     General               
 -----------------------------------------*/
-#calendar{
+#calendar {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -197,7 +197,7 @@ a {
 
 .navbar-default .navbar-toggle {
   border: none;
-  padding-top: 10px;
+  padding-top: 11px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -215,6 +215,14 @@ a {
   width: 66px;
   float: left;
   margin-right: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color : #4d4d4d !important;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 5px;
 }
 
 /*---------------------------------------
@@ -300,8 +308,6 @@ a {
 #overview .overview-detail {
   position: relative;
   top: -25px;
-  width: 100%;
-  text-align: justify;
 }
 
 #overview .btn {
@@ -351,13 +357,13 @@ a {
 #case_haut_droite:hover {
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.0)), url('../images/buche.png') 50% 0 repeat-y fixed;
+      rgba(0, 0, 0, 0.0)), url('../images/buche.jpg') 50% 0 repeat-y fixed;
 }
 
 #case_bas_gauche:hover {
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.0)), url('../images/food.png') 50% 0 repeat-y fixed;
+      rgba(0, 0, 0, 0.0)), url('../images/food.jpg') 50% 0 repeat-y fixed;
 }
 
 #case_bas_droite:hover {
@@ -480,6 +486,19 @@ footer .copyright-text {
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
+
+@media (min-width: 980px) {
+  #overview .overview-detail p {
+    width: 125%;
+    text-align: justify;
+  }
+
+  #overview .overview-detail .btn {
+    margin-left: 45px;
+    padding: 14px 46px;
+  }
+}
+
 @media (max-width: 980px) {
 
   #home {
@@ -496,7 +515,6 @@ footer .copyright-text {
   }
 
   #overview .overview-detail {
-    margin-left: 20px;
     top: 72px;
   }
 
@@ -506,6 +524,17 @@ footer .copyright-text {
 
   #calendar-header {
     height: 40vh;
+  }
+
+  #logo_nav{
+    width: 45px;
+    margin-top: -12px;
+    margin-right: 5px;
+  }
+
+  .navbar-brand{
+    font-size: 2.5em !important;
+    margin-top: 5px !important;
   }
 
 }
@@ -533,7 +562,7 @@ footer .copyright-text {
     line-height: 18px;
   }
 
-  #calendar{
+  #calendar {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -594,6 +623,10 @@ footer .copyright-text {
     left: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  #overview .overview-detail .btn {
+    padding: 14px 30px;
   }
 
 }
