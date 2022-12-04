@@ -82,7 +82,6 @@ $(document).ready(function () {
         "images/home-bg-slider-img2.png",
         "images/home-bg-slider-img3.png",
         "images/home-bg-slider-img4.png",
-        "images/home-bg-slider-img5.png",
       ], { duration: 5000, fade: 750 });
     });
   })
