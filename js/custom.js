@@ -63,11 +63,7 @@ $(document).ready(function () {
   function initParallax() {
     $('#home').parallax("100%", 0.1);
     $('#overview').parallax("100%", 0.3);
-    $('#team').parallax("100%", 0.2);
-    $('#adhesion').parallax("100%", 0.3);
     $('#calendar').parallax("100%", 0.1);
-    $('#contact').parallax("100%", 0.2);
-    $('#testimonial').parallax("100%", 0.2);
 
   }
   initParallax();
@@ -78,10 +74,9 @@ $(document).ready(function () {
   $(function () {
     jQuery(document).ready(function () {
       $('#home').backstretch([
-        "images/home-bg-slider-img1.png",
-        "images/home-bg-slider-img2.png",
-        "images/home-bg-slider-img3.png",
-        "images/home-bg-slider-img4.png",
+        "images/home-bg-slider-img1.jpg",
+        "images/home-bg-slider-img2.jpg",
+        "images/home-bg-slider-img3.jpg",
       ], { duration: 5000, fade: 750 });
     });
   })
